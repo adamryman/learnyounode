@@ -1,3 +1,4 @@
+// Output the number of newlines (\n) in a file passed as an argument
 
 var fs = require('fs');
 
@@ -12,6 +13,7 @@ var bufferLength = file.length;
 var newlineCount = 0;
 
 for (var i = 0; i < bufferLength; i++) {
+    // 10 is the ascii code for a newline
     if (file[i] === 10) {
         newlineCount++;
     }
