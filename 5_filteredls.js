@@ -9,9 +9,9 @@ var extension = process.argv[3];
 extension = '.' + extension;
 
 fs.readdir(directoryPathString, function(err, list) {
-    for(var i = 0; i < list.length; i++) {
+    for (var i = 0; i < list.length; i++) {
         var fileEx = path.extname(list[i]);
-        if(fileEx === extension) {
+        if (fileEx === extension) {
             console.log(list[i]);
         }
     }
